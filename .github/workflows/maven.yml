@@ -74,5 +74,5 @@ jobs:
           
       - name: Pull Docker Image on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@54.165.147.144 "docker pull davidayo97/maven-app:${GITHUB_SHA}"
+          ssh -o StrictHostKeyChecking=no ubuntu@54.165.147.144 "docker pull davidayo97/java-app:${GITHUB_SHA}"
 
