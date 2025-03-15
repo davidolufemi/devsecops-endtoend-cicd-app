@@ -35,6 +35,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker tag java-web-app:latest davidayo97/java-app:${GITHUB_SHA}
+     - name: Checkout
+       uses: actions/checkout@v4
+     - name: Build Docker image
+       run:  docker buildx build -t java-web-app:latest .
+    
+     - uses: actions/checkout@v4
+     - name: Tag the Docker image
+       run:  docker tag java-web-app:latest davidayo97/java-app:${GITHUB_SHA}
