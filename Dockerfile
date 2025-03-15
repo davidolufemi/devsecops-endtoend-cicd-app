@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy the dependencies
 COPY pom.xml .
 
+# Copy all files
+COPY . .
+
 # Expose the port on which the app will run
 EXPOSE 8080
 
