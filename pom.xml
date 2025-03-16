@@ -29,6 +29,8 @@
     </dependencies>
 
     <build>
+        <finalName>app</app> <!-- This will rename the final JAR to app.jar -->
+        
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
