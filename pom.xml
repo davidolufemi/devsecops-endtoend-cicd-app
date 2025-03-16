@@ -29,7 +29,7 @@
     </dependencies>
 
     <build>
-        <finalName>app</app> <!-- This will rename the final JAR to app.jar -->
+        <finalName>app</finalName> <!-- This will rename the final JAR to app.jar -->
         
         <plugins>
             <plugin>
