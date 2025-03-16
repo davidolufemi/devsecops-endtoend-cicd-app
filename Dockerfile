@@ -16,6 +16,9 @@ COPY . .
 # Build the application and package it into a .jar file
 RUN mvn clean install
 
+# Debugging step: List the contents of the /app/target directory
+RUN ls -l /app/target
+
 # Use a smaller base image for the final runtime image
 FROM openjdk:11-jre-slim
 
