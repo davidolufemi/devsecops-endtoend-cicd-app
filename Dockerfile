@@ -1,5 +1,5 @@
 # Use official openjdk base image
-FROM openjdk:11-jre-slim
+FROM maven:3.8-openjdk-11 
 
 # Set the working directory
 WORKDIR /app
