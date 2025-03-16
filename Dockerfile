@@ -12,6 +12,7 @@ RUN mvn clean package -DskipTests
 
 # Set the working directory to where the .jar file is located
 WORKDIR /app/target
+RUN ls -l
 
 # Expose the port on which the app will run
 EXPOSE 8080
