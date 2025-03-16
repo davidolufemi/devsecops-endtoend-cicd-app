@@ -10,6 +10,9 @@ COPY pom.xml .
 # Copy all files
 COPY . .
 
+# Build the application and package it into a .jar file
+RUN mvn clean package -DskipTests
+
 # Expose the port on which the app will run
 EXPOSE 8080
 
