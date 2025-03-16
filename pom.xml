@@ -9,35 +9,36 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>demo</name>
     <description>Demo project for Spring Boot</description>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.4</version>
+        <version>2.5.4</version> <!-- Spring Boot version -->
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId> <!-- Web dependency -->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <scope>test</scope> <!-- Test dependency -->
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>app</finalName> <!-- This will rename the final JAR to app.jar -->
+        <finalName>app</finalName> <!-- Final name of the output JAR file -->
         
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.5.4</version> <!-- Specify the plugin version explicitly -->
+                <version>2.5.4</version> <!-- Explicit plugin version -->
                 <configuration>
-                    <mainClass>com.example.demo.DemoApplication</mainClass> <!-- Replace with your main class -->
+                    <mainClass>com.example.demo.DemoApplication</mainClass> <!-- Main application class -->
                 </configuration>
             </plugin>
         </plugins>
