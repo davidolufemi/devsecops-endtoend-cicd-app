@@ -8,7 +8,7 @@ COPY pom.xml .
 COPY . .
 
 # Build the application and package it into a .jar file
-RUN mvn clean package -DskipTests
+RUN mvn clean install
 
 # Set the working directory to where the .jar file is located
 WORKDIR /app/target
