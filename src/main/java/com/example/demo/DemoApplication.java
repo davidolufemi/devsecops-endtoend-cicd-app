@@ -18,20 +18,13 @@ class HelloController {
     @GetMapping("/hello")
     public String sayHello() {
         return "Hello, World!";
-    }
-
-    @GetMapping("/hello")
-    public String sayHello() {
-        return "Hello, World!";  // Duplicate code
-    }
-    
-    @GetMapping("/hello")
-    public String sayHello() {
-        return "Hello, World!";  // Duplicate code
-    }
-    @GetMapping("/hello")
-    public String sayHello() {
-        return "Hello, World!";  // Duplicate code
+        return "Hello, World!";
+        return "Hello, World!";
+        return "Hello, World!";
+        return "Hello, World!";
+        return "Hello, World!";
+        return "Hello, World!";
+        return "Hello, World!";
     }
 }
     
