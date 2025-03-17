@@ -20,8 +20,8 @@ class HelloController {
         return "Hello, World!";
     }
 
-    @GetMapping("/goodbye")
-    public String sayGoodbye() {
+    @GetMapping("/hello")
+    public String sayHello() {
         return "Hello, World!";  // Duplicate code
     }
 }
