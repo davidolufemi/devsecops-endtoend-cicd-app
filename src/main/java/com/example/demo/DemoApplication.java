@@ -18,6 +18,13 @@ class HelloController {
     @GetMapping("/hello")
     public String sayHello() {
         return "Hello, World!";
+    }
+}
+
+@RestController
+class HelloController {
+    @GetMapping("/hello")
+    public String sayHello() {
         return "Hello, World!";
     }
 }
