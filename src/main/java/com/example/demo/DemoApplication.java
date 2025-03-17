@@ -24,5 +24,16 @@ class HelloController {
     public String sayHello() {
         return "Hello, World!";  // Duplicate code
     }
+    
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello, World!";  // Duplicate code
+    }
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello, World!";  // Duplicate code
+    }
 }
+    
+
 
