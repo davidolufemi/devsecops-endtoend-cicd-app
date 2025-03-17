@@ -19,12 +19,10 @@ class HelloController {
     public String sayHello() {
         return "Hello, World!";
     }
-}
 
-@RestController
-class HelloController {
-    @GetMapping("/hello")
-    public String sayHello() {
-        return "Hello, World!";
+    @GetMapping("/goodbye")
+    public String sayGoodbye() {
+        return "Hello, World!";  // Duplicate code
     }
 }
+
