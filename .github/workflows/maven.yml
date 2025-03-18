@@ -57,6 +57,24 @@ jobs:
            name: Depcheck report
            path: ${{github.workspace}}/reports
 
+  trivy:
+    runs-on: ubuntu-latest
+    name: scan container image
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: Build an image from Dockerfile
+        run: docker build -t java-web-app:${{ github.sha }} .
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: 'docker build -t java-web-app:${{ github.sha }}'
+          format: 'table'
+          exit-code: '1'
+          ignore-unfixed: true
+          vuln-type: 'os,library'
+          severity: 'CRITICAL,HIGH'
+
 
   # build-and-push-docker-image:
   #   runs-on: ubuntu-latest
